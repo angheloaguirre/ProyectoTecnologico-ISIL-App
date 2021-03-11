@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-50dp"
+        app:srcCompat="@drawable/barra" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="USUARIO NUEVO" />
+
+    <EditText
+        android:id="@+id/edtNombres"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="111dp"
+        android:ems="10"
+        android:textColor="#6A6868"
+        android:textSize="13dp"
+        android:hint="NOMBRES"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtFechaNacimiento"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="383dp"
+        android:ems="10"
+        android:textColor="#6A6868"
+        android:textSize="14dp"
+        android:hint="Fecha de Nacimiento - DD/MM/AAAA"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edtCelular"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="325dp"
+        android:ems="10"
+        android:textColor="#6A6868"
+        android:textSize="14dp"
+        android:hint="Nº de Celular"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtContraseña"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="497dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:textColor="#6A6868"
+        android:textSize="14dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edtApellidoMaterno"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:textColor="#6A6868"
+        android:textSize="14dp"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtApelliPaterno"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:textColor="#6A6868"
+        android:textSize="14dp"
+        android:hint="Apellido Paterno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="431dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="152dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="42dp"
+        app:cornerRadius="70dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:backgroundTint="#1FB7CA"
+        android:text="CREAR" />
+
+
+    <CheckBox
+        android:id="@+id/cbAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="52dp"
+        android:checked="false"
+        android:clickable="false"
+        android:onClick="loguearCheckbox"
+        android:text="Acepto compartir mis datos\ncon Vital para uso único\nde la Aplicación." />
+
+</RelativeLayout>

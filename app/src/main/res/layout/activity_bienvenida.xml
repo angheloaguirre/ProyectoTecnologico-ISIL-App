@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BienvenidoActivity">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/flipper_bienvenida"
+        android:layout_width="match_parent"
+        app:iss_auto_cycle="true"
+        app:iss_delay="0"
+        app:iss_period="1000"
+        app:iss_corner_radius="20"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnSaltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saltar"
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="#DD0A0A"
+        android:textSize="30dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
